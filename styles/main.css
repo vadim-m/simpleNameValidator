@@ -6,7 +6,7 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: black;
+  color: #000;
   margin: 0;
 }
 
@@ -16,7 +16,7 @@ body, html {
 
 .main-title {
   margin: 15px 0;
-  width: 95%;
+  width: 80%;
   text-align: center;
 }
 
@@ -29,7 +29,7 @@ body, html {
   max-width: 992px;
   width: 100%;
   margin: 0 auto;
-  background-color: #F5F5F5;
+  /* background-color: #F5F5F5; */
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -40,7 +40,7 @@ body, html {
   margin: 25px 0;
   width: 85%;
   min-height: 235px;
-  background-color: #6797A1;
+  background-color: #DDEBF7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,14 +62,15 @@ body, html {
   text-align: center;
   margin: 15px 0 15px 0;
   font-size: 24px;
+  border: 1px solid black;
 }
 
 .input-container__input--good {
-  background-color: #ECEFA9; 
+  background-color: #E2EFDA; 
 }
 
 .input-container__input--bad {
-  background-color: #EB524A; 
+  background-color: #FCE4D6; 
 }
 
 .author-info {
@@ -94,7 +95,7 @@ body, html {
   border-radius: 35px;
   padding: 5px 5px;
   margin: 15px 0 30px 0;
-  background-color: #EB524A; 
+  background-color: #FCE4D6; 
   animation: 0.15s linear 0.6s forwards delayedShow;
 }
 
