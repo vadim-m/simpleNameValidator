@@ -31,15 +31,16 @@ body, html {
   margin: 0 auto;
   /* background-color: #F5F5F5; */
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
 } 
 
 .input-container {
   margin: 25px 0;
   width: 85%;
-  min-height: 235px;
+  /* min-height: 235px; */
   background-color: #DDEBF7;
   display: flex;
   flex-direction: column;
@@ -73,9 +74,30 @@ body, html {
   background-color: #FCE4D6; 
 }
 
+.tech-info {
+  width: 85%;
+  background-color: #DDEBF7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.tech-info__title {
+  width: 80%;
+  margin-bottom: 0;
+}
+
+.tech-info__list {
+  width: 80%;
+  margin: 25px;
+  font-size: 18px;
+}
+
 .author-info {
-  align-self: flex-end;
-  margin-bottom: 35px;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
 }
 
 .author-info__link {

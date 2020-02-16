@@ -1,6 +1,10 @@
 const inputFilter = document.querySelector('#input-container__input'); 
 const errorTolltip = document.querySelector('#error-tooltip');
-const reservedVariableNames = ['let', 'return'];
+const reservedVariableNames = ['break', 'case', 'class', 'catch', 'const','continue', 'debugger',
+ 'default', 'delete', 'do', 'else','export', 'extends', 'finally', 'for', 'function', 'if', 
+ 'import', 'in', 'instanceof', 'let', 'new','return', 'super', 'switch','this', 'throw', 
+ 'try', 'typeof', 'var', 'void', 'while', 'with','yield', 'enum', 'await','implements', 
+ 'package', 'protected', 'static', 'interface', 'private', 'public', 'null', 'true', 'false'];
 
 // Функция для смены стилей инпута
 const changeInputStyles = (condition) => {            
@@ -42,7 +46,8 @@ const isTrueWord = (value) => {
    // проверка на зарезервированные слова
   for (k = 0; k < reservedVariableNames.length; k++) {
     if (value === reservedVariableNames[k]) {
-      return '# This is a reserved name!'
+      console.log(reservedVariableNames.length);
+      return '# This is a reserved name!';
     }
   } 
 
