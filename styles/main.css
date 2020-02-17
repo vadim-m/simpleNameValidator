@@ -1,8 +1,12 @@
 @import './normalize.css';
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,7 +19,8 @@ body, html {
 }
 
 .main-title {
-  margin: 15px 0;
+  font-size: 2rem;
+  margin: 1rem 0;
   width: 80%;
   text-align: center;
 }
@@ -29,7 +34,6 @@ body, html {
   max-width: 992px;
   width: 100%;
   margin: 0 auto;
-  /* background-color: #F5F5F5; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,31 +42,28 @@ body, html {
 } 
 
 .input-container {
-  margin: 25px 0;
+  margin: 1.5rem 0;
   width: 85%;
-  /* min-height: 235px; */
   background-color: #DDEBF7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .input-container__label {
   width: 80%;
-  padding-top: 15px;
-  padding-left: 15px;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 #input-container__input {
   width: 80%;
-  height: 50px;
+  height: 3rem;
   border: none;
-  border-radius: 35px;
+  border-radius: 2rem;
   text-align: center;
-  margin: 15px 0 15px 0;
-  font-size: 24px;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
   border: 1px solid black;
 }
 
@@ -80,7 +81,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 1rem;
 }
 
 .tech-info__title {
@@ -90,8 +91,8 @@ body, html {
 
 .tech-info__list {
   width: 80%;
-  margin: 25px;
-  font-size: 18px;
+  margin: 1.5rem;
+  font-size: 1.125rem;
 }
 
 .author-info {
@@ -106,17 +107,17 @@ body, html {
 }
 
 .input-container__error {
-  height: 22px;
+  height: 1.5rem;
   border-radius: 35px;
   padding: 5px 5px;
-  margin: 15px 0 30px 0;
+  margin: 1rem 0 2rem 0;
   visibility: hidden;
 }
 
 .input-container__error--true{
   border-radius: 35px;
   padding: 5px 5px;
-  margin: 15px 0 30px 0;
+  margin: 1rem 0 2rem 0;
   background-color: #FCE4D6; 
   animation: 0.15s linear 0.6s forwards delayedShow;
 }
@@ -140,3 +141,16 @@ body, html {
   }
 }
 
+/* Небольшой адаптив для мобилок */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  .main-title {
+    font-size: 1.67rem;
+    margin: 0.67rem 0;
+    width: 80%;
+    text-align: center;
+  }
+}
